@@ -14,34 +14,45 @@
   <body>
     <h1>Conference Schedule</h1>
     <table>
-      tr = 6
-      col = 5
-
-      <tr>
-        <th colspan="2">Time</th>
-        <th colspan="2">Room 1</th>
-        <th colspan="1">Room 2</th>
-        <th colspan="1">Room 3</th>
-        <th colspan="1">Room 4</th>
+      <thead>
+        <tr>
+        <th>Time</th>
+        <th>Room 1</th>
+        <th>Room 2</th>
+        <th>Room 3</th>
+        <th>Room 4</th>
       </tr>
+      </thead>
+
+      <tbody>
       <tr>
-        <td colspan="2">9:00 - 10:00 AM</td>
-        <td colspan="2">Keynote</td>
+        <td rowspan="3">9:00 - 10:00 AM</td>
+        <td rowspan="2">Keynote</td>
         <td>Session A</td>
         <td>Session B</td>
-        <td>Session C</td>
+        <td rowspan="3">Session C</td>
       </tr>
       <tr>
-        <td colspan="2">12:00 - 1:00 PM</td>
-        <td colspan="5">Lunch Break</td>
+        <td>Session D</td>
+        <td>Session E</td>
       </tr>
       <tr>
-        <td colspan="2">1:00 - 2:00 PM</td>
-        <td colspan="2">Session G</td>
+        <td>10:30-11:30 AM</td>
+        <td colspan="2">Session F</td>
+      </tr>
+      <tr>
+        <td>12:00 - 1:00 PM</td>
+        <td colspan="4">Lunch Break</td>
+      </tr>
+      <tr>
+        <td>1:00 - 2:00 PM</td>
+        <td>Session G</td>
         <td>Session H</td>
         <td>Session I</td>
         <td>Session J</td>
       </tr>
+      </tbody>
+
     </table>
   </body>
 </html>
